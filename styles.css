@@ -7,7 +7,7 @@
     display: flex;
     align-items :center;
     width:fit-content;
-    border: 1px solid #000;
+    border: 1px solid #052E70;
     border-radius:25px;
     margin: 20px auto;
     background-color: #fff;
@@ -15,7 +15,7 @@
 }
 
 #search-bar{
-    width: 350x;
+    width: 750x;
     border: none;
     outline: none;
     background-color: transparent;
@@ -39,4 +39,43 @@
     padding: 0 16px;
     height:35px;
     display: flex;
+}
+
+#results-container{
+    width:70%;
+    height:90%;
+    margin:20px auto;
+    border-radius: 25px;
+    border: 1px solid #052E70;
+}
+
+.card{
+    border-radius: 10px;
+    border: 1px solid #5E78EB;
+    margin: 20px auto;
+    width: 20%;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.meal-name{
+    text-align: center;
+    font-size:1.2em;
+    padding: 0;
+    margin: 8px 0 4px 0;
+}
+
+.meal-img{
+    width:100%;
+    max-width: 180px;
+    padding-top:2px;
+    border-radius: 8px;
+    object-fit:cover;
+}
+
+.video-btn{
+    /* im gonna have to add more stuff later, this is temporary*/
+    padding-top: 2px;
+    margin: 4px auto 10px;
 }

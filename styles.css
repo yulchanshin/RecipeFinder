@@ -42,23 +42,21 @@
 }
 
 #results-container{
-    
-    width:1300px;
-    height:1000px;
+    width:85%;
     display: grid;
     justify-content:space-between;
     grid-template-columns:repeat(5, 1fr);
     gap: 5px;
     margin:20px auto;
     border-radius: 25px;
-    border: 1px solid #052E70;
+    border: 0px solid #052E70;
 }
 
 .card{
     border-radius: 10px;
     border: 1px solid #5E78EB;
-    margin: 20px 20px;
-    width: 200px;
+    margin: 5px;
+    width: 100%;
     display:flex;
     flex-direction: column;
     align-items:center;
@@ -66,14 +64,16 @@
 
 .meal-name{
     text-align: center;
-    font-size:1.2em;
+    height:3em;
+    font-size:1.5em;
     padding: 0;
     margin: 8px 0 4px 0;
 }
 
 .meal-img{
-    width:100%;
-    max-width: 180px;
+    width:80%;
+    height: 80%;
+    max-width: 100%;
     padding-top:2px;
     border-radius: 8px;
     object-fit:cover;
@@ -83,4 +83,39 @@
     /* im gonna have to add more stuff later, this is temporary*/
     padding-top: 2px;
     margin: 4px auto 10px;
+}
+
+
+.vid-wrapper{
+    text-align:center;
+    margin: 0 auto;
+    width:80%;
+    display:block;
+    aspect-ratio: 16/9;
+    border-radius:5px;
+}
+
+.meal-video{
+    display:block;
+    width:100%;
+    aspect-ratio: 16/9;
+    border:none;
+}
+
+.rest-wrapper{
+    display:flex;
+    flex-direction:row;
+    gap:16px;
+    width: 80%;
+    height:auto;
+    margin: 3px auto 0;
+    border:1px solid #000;
+    border-radius:5px;
+}
+
+.rest-wrapper span{
+    width: 50%;
+    height:auto;
+    margin:5px;
+    border: 1px solid #5E78EB;
 }

@@ -1,0 +1,29 @@
+<!-- Recipe Finder Logo: Minimal Modern R.F -->
+<svg width="220" height="220" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rfTitle rfDesc">
+  <title id="rfTitle">Recipe Finder Logo</title>
+  <desc id="rfDesc">Minimal modern logo with the letters R.F in bold font.</desc>
+  <style>
+    :root {
+      --rf-accent: #E50914; /* Netflix red vibe */
+      --rf-bg: #0F1115;     /* deep dark background */
+      --rf-text: #FFFFFF;   /* clean white text */
+    }
+    text {
+      font-family: "Poppins", "Inter", Arial, sans-serif;
+      font-weight: 800;
+      font-size: 36px;
+      fill: var(--rf-text);
+      text-anchor: middle;
+      dominant-baseline: middle;
+    }
+  </style>
+
+  <!-- Background Circle -->
+  <circle cx="64" cy="64" r="60" fill="var(--rf-bg)" />
+
+  <!-- Accent Border -->
+  <circle cx="64" cy="64" r="58" stroke="var(--rf-accent)" stroke-width="4" fill="none"/>
+
+  <!-- R.F Monogram -->
+  <text x="64" y="70">R.F</text>
+</svg>

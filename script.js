@@ -1,7 +1,16 @@
+/*
+ NOTES FOR FEATURES THAT I MIGHT ADD:
+    -CLICK ON LOGO TO GET BACK TO THE DEFAULT PAGE
+    -OBV BETTER STYLING, LIKE SOME MORE POLISHED UI
+    
+    FOR FUTURE: ADD A WAY TO UPLOAD UR OWN RECIPES OR MAYBE LEAVE A REVIEW/COMMENT?
+*/ 
+
 const searchBtn = document.getElementById("search-btn");
 const resultContainer = document.getElementById("results-container");
 const searchBar = document.getElementById("search-bar");
 const detailsContainer = document.getElementById("details-container")
+const logoAnchor = document.getElementById("logo-anchor");
 
 document.addEventListener("DOMContentLoaded", fetchOnPageLoad);
 searchBtn.addEventListener("click", fetchOnSearch);
@@ -10,7 +19,9 @@ searchBar.addEventListener("keydown", (event)=>{
         fetchOnSearch();
     }
 })
-
+logoAnchor.addEventListener("click", ()=>{
+    location.reload()
+})
 
 //function to send the user to the link when click on view recipe button
 function playVideo (link){

@@ -1,15 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background: #FFFF99;
+    margin:0;
+    padding:0;
+}
+
 #header-container{
     width:100%;
     height:60px;
-    margin-bottom:30px;
     display:flex;
     justify-content:space-between;
     align-items:center;
+    background-color:#FFB1C6;
 }
 
 #logo{
     width:48px;
-    height:48px;
+    height:60px;
 }
 
 .search-container{
@@ -33,6 +44,7 @@
 
 #search-btn{
     border-radius: 20px;
+    border-color:transparent;
     margin-left: 10px;
     width:50px;
     cursor:pointer;
@@ -51,25 +63,32 @@
     display: flex;
 }
 
+
 #results-container{
-    width:85%;
+    width:95%;
     display: grid;
     justify-content:space-between;
     grid-template-columns:repeat(5, 1fr);
-    gap: 5px;
-    margin:20px auto;
+    gap: 10px;
+    margin:auto;
     border-radius: 25px;
     border: 0px solid #052E70;
 }
 
 .card{
     border-radius: 10px;
-    border: 1px solid #5E78EB;
-    margin: 5px;
+    border: 1px solid #7A5C58;
+    margin: 10px;
     width: 100%;
     display:flex;
     flex-direction: column;
     align-items:center;
+    box-shadow: 1px 1px 1px 0.5px #7A5C58;
+}
+
+.card:hover{
+    transform:scale(1.05);
+
 }
 
 .meal-name{
@@ -92,7 +111,13 @@
 .video-btn{
     /* im gonna have to add more stuff later, this is temporary*/
     padding-top: 2px;
-    margin: 4px auto 10px;
+    margin-bottom:2px;
+    margin-top:2px;
+}
+
+.video-btn:hover{
+    transform:scale(1.05);
+    background-color:#e67c00;
 }
 
 
